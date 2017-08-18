@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="description" content="Creative One Page Parallax Template">
+	<meta name="keywords" content="Creative, Onepage, Parallax, HTML5, Bootstrap, Popular, custom, personal, portfolio" /> 
+	<meta name="author" content=""> 
+	<title>DLH REAL ESTATE - MANAGEMENT.JSC</title> 
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/prettyPhoto.css" rel="stylesheet"> 
+	<link href="css/font-awesome.min.css" rel="stylesheet"> 
+	<link href="css/animate.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet"> 
+	<link href="css/header.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> 
+	<script src="js/respond.min.js"></script> <![endif]--> 
+	<script type="text/javascript" src="./js/menu.js"></script>
+	<link rel="shortcut icon" href="images/ico/favicon.png"> 
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"> 
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"> 
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"> 
+	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body>
+
+<div class="wrapper">	
+    <div class="page"> 
+		<div class="header-language-container">
+			<div class="store-language-container">
+				<!--<div class="form-language">
+					<ul class="flags">
+						<li>
+							<a title="English" onclick="emptyCartWhenChangeStore(&#39;en&#39;, &#39;https://www.google.com.vn?language=en&#39;)">English </a>
+						</li>
+						<li class="selected">
+							<a title="Vietnamese" onclick="emptyCartWhenChangeStore(&#39;vi&#39;, &#39;https://www.google.com.vn?language=en&#39;)">Vietnamese </a>
+						</li>
+					</ul>
+				</div>-->
+				<script type="text/javascript">
+					function emptyCartWhenChangeStore(storeCode,urlReturn){
+						var storeCodeCurrent="vi";
+						if(storeCode!=storeCodeCurrent){
+							jQuery.ajax({url:"/reservations/index/emptycart",success:function(result){location.href=urlReturn;}});
+						}
+					}</script>
+			</div>
+		</div>
+		<header id="header" class="page-header">
+			<div class="page-header-container">
+				<a class="logo" href="index.html">
+					<script data-pagespeed-no-defer="">//<![CDATA[
+						(function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];return a}return[]};function w(b){var c=window;if(c.addEventListener)c.addEventListener("load",b,!1);else if(c.attachEvent)c.attachEvent("onload",b);else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=d;this.b={};this.a=[];this.c={}}function z(b,c){var a,d,e=c.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=c.offsetWidth&&0>=c.offsetHeight)a=!1;else{d=c.getBoundingClientRect();var f=document.body;a=d.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);d=d.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+d;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&d<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}y.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&z(this,b)};u("pagespeed.CriticalImages.checkImageForCriticality",function(b){x.checkImageForCriticality(b)});u("pagespeed.CriticalImages.checkCriticalImages",function(){A(x)});function A(b){b.b={};for(var c=["IMG","INPUT"],a=[],d=0;d<c.length;++d)a=a.concat(v(document.getElementsByTagName(c[d])));if(a.length&&a[0].getBoundingClientRect){for(d=0;c=a[d];++d)z(b,c);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(c=!!b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),d=1;d<b.a.length;++d){var e=","+encodeURIComponent(b.a[d]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(B())),131072>=a.length+e.length&&(a+=e),c=!0);C=a;if(c){d=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(r){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(D){}}f&&(f.open("POST",d+(-1==d.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function B(){var b={},c;c=document.getElementsByTagName("IMG");if(!c.length)return{};var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";u("pagespeed.CriticalImages.getBeaconData",function(){return C});u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','index.html/?___store=vi','2L-ZMDIrHf',true,false,'30WcGK20ceM');
+					//]]></script>
+					<img src="./images/xlogo_0x19_trang.png" alt="DLH Real Estate - Management.JSC" class="large" data-pagespeed-url-hash="1593954966" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+					<img src="./images/xlogo_0x19_trang.png" alt="DLH Real Estate - Management.JSC" class="small" data-pagespeed-url-hash="1593954966" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+				</a>
+				<!-- Navigation -->
+				<a href="javascript:void(0)" class="show-menu">
+					<img src="data:image/webp;base64,UklGRiwAAABXRUJQVlA4TB8AAAAvEwACEA8w//M///Mf8CDMNjqD+dP2dQ4R/U/a054AAA==" alt="show menu" data-pagespeed-url-hash="861438014" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+				</a>
+				<div id="header-nav" class="skip-content" style="display: none">					
+					<nav id="nav">
+						<ol class="nav-primary">				
+							<li data-menuanchor="home"><a href="#header">Trang chủ</a></li>
+							<li data-menuanchor="aboutUs"><a href="#about-us">Giới thiệu</a></li>
+							<li data-menuanchor="facilities"><a href="#services">Dịch vụ</a></li>
+							<li data-menuanchor="accommodation"><a href="#our-team">Đội ngũ Chuyên Gia</a></li>
+							<li><a href="#portfolio">Mô Hình Tổ Chức</a></li>
+							<li><a href="#blog">Mô Hình Quản Lý Bất Động Sản</a></li>
+							<li><a href="#clients">Khách Hàng</a></li>
+							<li data-menuanchor="contacts"><a href="#contact">Liên hệ</a></li>
+						</ol>
+					</nav>
+				</div>
+				<a class="img-showmenu"></a>
+			</div>
+		</header>
+		<script type="text/javascript">
+			jQuery.noConflict();
+			jQuery('.show-menu').click(function(){
+				jQuery('#header-nav').toggle();
+			});
+			jQuery(document).ready(function(){
+				jQuery('.show-menu').click(function(){
+					if(jQuery('#header-nav').css('display')=='block'){
+						jQuery('.logo').css('background','none');
+					}else{
+						jQuery('.logo').css('background','url(./images/bg-logo.png) no-repeat');
+				}});
+			})
+			</script>
+		<script type="text/javascript">window.addEventListener("orientationchange",function(){location.reload();},false);</script>
+	</div>
+</div>
+	<section id="home">
+		<div class="home-pattern"></div>
+		<div id="main-carousel" class="carousel slide" data-ride="carousel"> 
+			<ol class="carousel-indicators">
+				<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#main-carousel" data-slide-to="1"></li>
+				<li data-target="#main-carousel" data-slide-to="2"></li>
+			</ol><!--/.carousel-indicators--> 
+			<div class="carousel-inner">
+				<div class="item active" style="background-image: url(images/slider/03.jpg)"> 
+					<div class="carousel-caption"> 
+						<div> 
+							<h2 class="heading animated bounceInDown">Cùng chúng tôi thực hiện ước mơ</h2> 
+							<p class="animated bounceInUp">Mang giải pháp an toàn đến cho cuộc sống của bạn</p> 
+							<a class="btn btn-default slider-btn animated fadeIn" href="#contact">Liên hệ</a> 
+						</div> 
+					</div> 
+				</div>
+				<div class="item" style="background-image: url(images/slider/04.jpg)"> 
+					<div class="carousel-caption"> <div> 
+						<h2 class="heading animated bounceInDown">Vững tin đầu tư</h2> 
+						<p class="animated bounceInUp">An cư lạc nghiệp</p> 
+						<a class="btn btn-default slider-btn animated fadeIn" href="#contact">Liên hệ</a> 
+					</div> 
+				</div> 
+			</div> 
+			    <div class="item" style="background-image: url(images/slider/01.jpg)"> 
+				<div class="carousel-caption"> 
+					<div> 
+						<h2 class="heading animated bounceInRight">Nhà đẹp - nhà xinh</h2> 
+						<p class="animated bounceInLeft">Niềm mơ ước của mỗi gia đình</p> 
+						<a class="btn btn-default slider-btn animated bounceInUp" href="#contact">Liên hệ</a> 
+						</div>
+				</div> 
+			</div>
+			</div><!--/.carousel-inner-->
+
+			<a class="carousel-left member-carousel-control hidden-xs" href="#main-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+			<a class="carousel-right member-carousel-control hidden-xs" href="#main-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+		</div> 
+
+	</section><!--/#home-->
+
+<section id="about-us">
+	<div class="container">
+		<div class="text-center">
+			<div class="col-sm-8 col-sm-offset-2">
+				<h2 class="title-one">Tại sao chọn chúng tôi?</h2>
+				<p>
+					Chúng tôi hiểu rõ về chất lượng và nguồn nhân lực quản lý bất động sản tại Việt Nam.
+					Chúng tôi luôn luôn lắng nghe yêu cầu của khách hàng và lấy sự hài lòng của khách hàng làm động lực phấn đấu và là sự phát triển của công ty.<br>
+					Chúng tôi hiểu rõ và là đối tác uy tín và lâu năm với các nhà thầu cung cấp dịch vụ: An ninh, làm sạch, cây xanh, kiểm soát côn trùng, ...
+					Chúng tôi tư vấn mọi mặt về quản lý và vận hành Bất động sản nhằm đáp ứng nhu cầu của khách hàng hoạt động trong môi trường kinh doanh không ngừng biến động.<br>
+				</p>
+			</div>
+		</div>
+		<div class="about-us">
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>Tại sao chọn chúng tôi?</h3>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#about" data-toggle="tab"><i class="fa fa-chain-broken"></i> Về chúng tôi</a></li>
+						<li><a href="#mission" data-toggle="tab"><i class="fa fa-th-large"></i> Sứ mệnh</a></li>
+						<li><a href="#community" data-toggle="tab"><i class="fa fa-users"></i> Cộng đồng</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="about">
+							<div class="media">
+								<img class="pull-left media-object" src="images/about-us/about.jpg" alt="about us"> 
+								<div class="media-body">
+									<p>Với mong muốn mang tới giá trị đích thực cho khách hàng và cung cấp một không gian sống phù hợp và đẳng cấp thỏai mái theo tiêu chuẩn, đáp ứng yêu cầu ngày một cao của khách hàng, Công ty Cổ phần Quản lý Bất động sản DLH được thành lập trên cơ sở kết hợp các thành viên có nhiều năm kinh nghiệm, uy tín và tâm huyết trên thị trường  chúng tôi – một nhóm chuyên gia giàu kinh nghiệm trong ngành quản lý Bất động sản tập hợp thành lập Công ty Cổ phần Dịch vụ Quản lý Bất động sản DLH.</p>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="mission">
+							<div class="media">
+								<img class="pull-left media-object" src="images/about-us/mission.jpg" alt="Mission"> 
+								<div class="media-body">
+									<p> Từ 2005 – 2014: quản lý  – vận hành 15 dự án khu dân cư (cao ốc chung cư – cụm biệt thự – nhà phố) – cao ốc văn phòng.
+										Thế mạnh của chúng tôi:
+										Chuyên nghiệp – Tận tâm – Hiệu quả - Thấu hiểu khách hàng
+										Tư vấn cho Chủ Đầu tư  – Ban Đại diện cư dân các phương án quản lý – vận hành – dịch vụ hiệu quả nhất, đáp ứng tốt nhất nhu cầu khách hàng.
+										Điều hành đội ngũ nhân viên với hiệu quả và hiệu suất làm việc thỏa mãn cao nhất yêu cầu của khách hàng (chủ đầu tư – cá nhân cư dân).
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="community">
+							<div class="media">
+								<img class="pull-left media-object" src="images/about-us/community.jpg" alt="Community"> 
+								<div class="media-body">
+									<p>Thông tin đang được cập nhật</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<h3>Các kỹ năng của chúng tôi</h3>		
+				</div>
+			</div>
+		</div>
+	</section><!--/#about-us-->
+
+	<section id="services" class="parallax-section">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-sm-8 col-sm-offset-2">
+					<h2 class="title-one">Dịch vụ</h2>
+					<p>Thông tin đang được cập nhật</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="our-service">
+							<div class="services row">
+								<div class="col-sm-4">
+									<div class="single-service">
+										<i class="fa fa-th"></i>
+										<h2>Bất động sản</h2>
+										<p>Thông tin đang được cập nhật</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="single-service">
+										<i class="fa fa-html5"></i>
+										<h2>Thi công công trình</h2>
+										<p>Thông tin đang được cập nhật</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="single-service">
+										<i class="fa fa-users"></i>
+										<h2>Tư vấn và quảng cáo</h2>
+										<p>Thông tin đang được cập nhật</p>
+									</div>
+								</div>
+							</div>
+							<!--div class="services row">
+								<div class="col-sm-4">
+									<div class="single-service">
+										<i class="fa fa-th"></i>
+										<h2>aaaaaaaaaaaaaaaaa</h2>
+										<p>Thông tin đang được cập nhật, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Thông tin đang được cập nhật, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="single-service">
+										<i class="fa fa-html5"></i>
+										<h2>bbbbbbbbbbbbbbbbb</h2>
+										<p>Thông tin đang được cập nhật, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Thông tin đang được cập nhật, consectetuer adipiscing elit, sed diam nonummy </p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="single-service">
+										<i class="fa fa-users"></i>
+										<h2>ccccccccccccc</h2>
+										<p>Thông tin đang được cập nhật, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Thông tin đang được cập nhật, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+									</div>
+								</div>
+							</div>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/#service-->
+
+		<section id="our-team">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h2 class="title-one">ĐỘI NGŨ CHUYÊN GIA</h2>
+						<p>Thông tin đang được cập nhật</p>
+					</div>
+				</div>
+				<div id="team-carousel" class="carousel slide" data-interval="false">
+					<a class="member-left" href="#team-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+					<a class="member-right" href="#team-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+					<div class="carousel-inner team-members">
+						<div class="row item active">
+							<div class="col-sm-6 col-md-3">
+								<div class="single-member">
+									<img src="images/our-team/aa.png" alt="team member" />
+									<h4>Thông tin đang được cập nhật</h4>
+									<h5>Thông tin đang được cập nhật</h5>
+									<p>Thông tin đang được cập nhật</p>
+									<div class="socials">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-google-plus"></i></a>
+										<a href="#"><i class="fa fa-dribbble"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="single-member">
+									<img src="images/our-team/aa.png" alt="team member" />
+									<h4>Thông tin đang được cập nhật</h4>
+									<h5>Thông tin đang được cập nhật</h5>
+									<p>Thông tin đang được cập nhật</p>
+									<div class="socials">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-google-plus"></i></a>
+										<a href="#"><i class="fa fa-dribbble"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="single-member">
+									<img src="images/our-team/aa.png" alt="team member" />
+									<h4>Thông tin đang được cập nhật</h4>
+									<h5>Thông tin đang được cập nhật</h5>
+									<p>Thông tin đang được cập nhật</p>
+									<div class="socials">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-google-plus"></i></a>
+										<a href="#"><i class="fa fa-dribbble"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="single-member">
+									<img src="images/our-team/aa.png" alt="team member" />
+									<h4>Thông tin đang được cập nhật</h4>
+									<h5>Thông tin đang được cập nhật</h5>
+									<p>Thông tin đang được cập nhật</p>
+									<div class="socials">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-google-plus"></i></a>
+										<a href="#"><i class="fa fa-dribbble"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/#Our-Team-->
+
+		<section id="portfolio">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h2 class="title-one">Mô hình tổ chức</h2>
+						<p>Thông tin đang được cập nhật</p>
+					</div>
+				</div>
+				<ul class="portfolio-filter text-center">
+					<li><a class="btn btn-default active" href="#" data-filter="*">Thông tin đang được cập nhật</a></li>
+					<li><a class="btn btn-default" href="#" data-filter=".html">Thông tin đang được cập nhật</a></li>
+					<li><a class="btn btn-default" href="#" data-filter=".wordpress">Thông tin đang được cập nhật</a></li>
+					<li><a class="btn btn-default" href="#" data-filter=".joomla">Thông tin đang được cập nhật</a></li>
+					<li><a class="btn btn-default" href="#" data-filter=".megento">Thông tin đang được cập nhật</a></li>
+				</ul><!--/#portfolio-filter-->
+				<div class="portfolio-items">
+					<div class="col-sm-3 col-xs-12 portfolio-item html">
+						<div class="view efffect">
+							<div class="portfolio-image">
+								<img src="images/portfolio/1.jpg" alt=""></div> 
+								<div class="mask text-center">
+									<h3>Thông tin đang được cập nhật</h3>
+									<h4>Thông tin đang được cập nhật </h4>
+									<a href="#"><i class="fa fa-link"></i></a>
+									<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12 portfolio-item jooma">
+							<div class="view efffect" >
+								<div class="portfolio-image">
+									<img src="images/portfolio/2.jpg" alt="">
+								</div> 
+								<div class="mask text-center">
+									<h3>Thông tin đang được cập nhật</h3>
+									<h4>Thông tin đang được cập nhật </h4>
+									<a href="#"><i class="fa fa-link"></i></a>
+									<a href="images/portfolio/big-item4.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12 portfolio-item wordpress">
+							<div class="view efffect">
+								<div class="portfolio-image">
+									<img src="images/portfolio/3.jpg" alt="">
+								</div> 
+								<div class="mask text-center">
+								<h3>Thông tin đang được cập nhật</h3>
+								<h4>Thông tin đang được cập nhật </h4>
+								<a href="#"><i class="fa fa-link"></i></a>
+								<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12 portfolio-item megento">
+						<div class="view efffect">
+							<div class="portfolio-image">
+								<img src="images/portfolio/4.jpg" alt="">
+							</div> 
+							<div class="mask text-center">
+								<h3>Thông tin đang được cập nhật</h3>
+								<h4>Thông tin đang được cập nhật </h4>
+								<a href="#"><i class="fa fa-link"></i></a>
+								<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12 portfolio-item html">
+						<div class="view efffect">
+							<div class="portfolio-image">
+								<img src="images/portfolio/5.jpg" alt="">
+							</div> <div class="mask text-center">
+							<h3>Thông tin đang được cập nhật</h3>
+							<h4>Thông tin đang được cập nhật </h4>
+							<a href="#"><i class="fa fa-link"></i></a>
+							<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12 portfolio-item wordpress">
+					<div class="view efffect">
+						<div class="portfolio-image">
+							<img src="images/portfolio/6.jpg" alt="">
+						</div> 
+						<div class="mask text-center">
+							<h3>Thông tin đang được cập nhật</h3>
+							<h4>Thông tin đang được cập nhật </h4>
+							<a href="#"><i class="fa fa-link"></i></a>
+							<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12 portfolio-item html">
+					<div class="view efffect">
+						<div class="portfolio-image">
+							<img src="images/portfolio/7.jpg" alt="">
+						</div> 
+						<div class="mask text-center">
+							<h3>Thông tin đang được cập nhật</h3>
+							<h4>Thông tin đang được cập nhật </h4>
+							<a href="#"><i class="fa fa-link"></i></a>
+							<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12 portfolio-item joomla">
+					<div class="view efffect">
+						<div class="portfolio-image">
+							<img src="images/portfolio/8.jpg" alt=""></div> 
+							<div class="mask text-center">
+								<h3>Thông tin đang được cập nhật</h3>
+								<h4>Thông tin đang được cập nhật </h4>
+								<a href="#"><i class="fa fa-link"></i></a>
+								<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12 portfolio-item html">
+						<div class="view efffect">
+							<div class="portfolio-image">
+								<img src="images/portfolio/9.jpg" alt="">
+							</div> 
+							<div class="mask text-center">
+								<h3>Thông tin đang được cập nhật</h3>
+								<h4>Thông tin đang được cập nhật </h4>
+								<a href="#"><i class="fa fa-link"></i></a>
+								<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12 portfolio-item wordpress">
+						<div class="view efffect">
+							<div class="portfolio-image">
+								<img src="images/portfolio/10.jpg" alt=""></div> 
+								<div class="mask text-center">
+									<h3>Thông tin đang được cập nhật</h3>
+									<h4>Thông tin đang được cập nhật </h4>
+									<a href="#"><i class="fa fa-link"></i></a>
+									<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12 portfolio-item joomla">
+							<div class="view efffect">
+								<div class="portfolio-image">
+									<img src="images/portfolio/11.jpg" alt=""></div> 
+									<div class="mask text-center">
+										<h3>Thông tin đang được cập nhật</h3>
+										<h4>Thông tin đang được cập nhật </h4>
+										<a href="#"><i class="fa fa-link"></i></a>
+										<a href="images/portfolio/big-item3.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-xs-12 portfolio-item megento">
+								<div class="view efffect">
+									<div class="portfolio-image">
+										<img src="images/portfolio/12.jpg" alt=""></div> 
+										<div class="mask text-center">
+											<h3>Thông tin đang được cập nhật</h3>
+											<h4>Thông tin đang được cập nhật </h4>
+											<a href="#"><i class="fa fa-link"></i></a>
+											<a href="images/portfolio/big-item4.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+
+					</section> <!--/#portfolio-->
+
+					<section id="clients" class="parallax-section">
+						<div class="container">
+							<div class="clients-wrapper">
+								<div class="row text-center">
+									<div class="col-sm-8 col-sm-offset-2">
+										<h2 class="title-one">Khách hàng nói về chúng tôi</h2>
+										<p>Thông tin đang được cập nhật</p>
+									</div>
+								</div>
+								<div id="clients-carousel" class="carousel slide" data-ride="carousel"> <!-- Indicators -->
+									<ol class="carousel-indicators">
+										<li data-target="#clients-carousel" data-slide-to="0" class="active"></li>
+										<li data-target="#clients-carousel" data-slide-to="1"></li>
+										<li data-target="#clients-carousel" data-slide-to="2"></li>
+									</ol> <!-- Wrapper for slides -->
+									<div class="carousel-inner">
+										<div class="item active">
+											<div class="single-client">
+												<div class="media">
+													<img class="pull-left" src="images/clients/client1.jpg" alt="">
+													<div class="media-body">
+														<blockquote>
+															<p>CHUNG CƯ MỸ CẢNH – PHÚ MỸ HƯNG</p>
+															<small> 84 căn hộ với 252 cư dân nhiều quốc tịch sinh sống,
+																	Có khuôn viên cây xanh, khu vui chơi trẻ em,
+																	Hệ thống điện, nước, intercom, PCCC, …
+															</small>
+															<a href="">www.dlhrealestate.vn</a></blockquote>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="single-client">
+												<div class="media">
+													<img class="pull-left" src="images/clients/client3.jpg" alt="">
+													<div class="media-body">
+														<blockquote>
+															<p>CHUNG CƯ GARDEN COURT 1 - PHÚ MỸ HƯNG</p>
+															<small> 103 căn hộ và 9 cửa hàng, 1 tầng hầm với hơn 450 cư dân mang nhiều quốc tịch.
+																	Hồ nước cảnh quan, công viên nội khu.
+																	Diện tích khuôn viên 5.500 m2  
+																	Phòng sinh hoạt cộng đồng, phòng thể dục.
+																	Tầng trệt với nhiều cửa hàng mua bán, công ty, nhà hàng, siêu thị mini, …
+																	Hệ thống gas trung tâm, thang máy, điện, nước, intercom, PCCC, …
+															</small>
+															<a href="">www.dlhrealestate.vn</a>
+														</blockquote>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="single-client">
+												<div class="media">
+													<img class="pull-left" src="images/clients/client4.jpg" alt="">
+													<div class="media-body">
+														<blockquote>
+															<p>CAO ỐC VĂN PHÒNG GAS PETROLIMEX - TỔNG CÔNG TY XĂNG DẦU VIỆT NAM</p>
+															<small> Gồm 01 tầng hầm và 09 tầng lầu. 
+																	Với hơn 800 nhân viên đang làm việc
+																	Hệ thống máy lạnh trung tâm
+																	Hệ thống camera giám sát toàn tòa nhà
+																	Hệ thống báo cháy tự động, máy phát điện, …
+																	Hệ thống giữ xe thông minh.
+															</small>
+															<a href="">www.dlhrealestate.vn</a>
+														</blockquote>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section><!--/#clients-->
+
+					<section id="blog"> 
+						<div class="container">
+							<div class="row text-center clearfix">
+								<div class="col-sm-8 col-sm-offset-2">
+									<h2 class="title-one">Mô Hình Quản Lý Bất Động Sản</h2>
+									<p class="blog-heading">Thông tin đang được cập nhật</p>
+								</div>
+							</div> 
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="single-blog">
+										<img src="images/blog/1.jpg" alt="" />
+										<h2>Thông tin đang được cập nhật</h2>
+										<ul class="post-meta">
+											<li><i class="fa fa-pencil-square-o"></i><strong> Posted By:</strong> DLH</li>
+											<li><i class="fa fa-clock-o"></i><strong> Posted On:</strong> Apr 15 2014</li>
+										</ul>
+										<div class="blog-content">
+											<p>Thông tin đang được cập nhật</p>
+										</div>
+										<a href="" class="btn btn-primary" data-toggle="modal" data-target="#blog-detail">Thêm thông tin</a>
+									</div>
+									<div class="modal fade" id="blog-detail" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-body">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<img src="images/blog/3.jpg" alt="" />
+													<h2>Thông tin đang được cập nhật</h2>
+													<p>Thông tin đang được cập nhật</p>
+												</div> 
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="single-blog">
+										<img src="images/blog/2.jpg" alt="" />
+										<h2>Thông tin đang được cập nhật</h2>
+										<ul class="post-meta">
+											<li><i class="fa fa-pencil-square-o"></i><strong> Posted By:</strong> DLH</li>
+											<li><i class="fa fa-clock-o"></i><strong> Posted On:</strong> Apr 15 2014</li>
+										</ul>
+										<div class="blog-content">
+											<p>Thông tin đang được cập nhật</p>
+										</div>
+										<a href="" class="btn btn-primary" data-toggle="modal" data-target="#blog-two">Thêm thông tin</a>
+									</div>
+									<div class="modal fade" id="blog-two" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-body">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<img src="images/blog/2.jpg" alt="" />
+													<h2>Thông tin đang được cập nhật</h2>
+													<p>Thông tin đang được cập nhật</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="single-blog">
+										<img src="images/blog/3.jpg" alt="" />
+										<h2>Thông tin đang được cập nhật</h2>
+										<ul class="post-meta">
+											<li><i class="fa fa-pencil-square-o"></i><strong> Posted By:</strong> DLH</li>
+											<li><i class="fa fa-clock-o"></i><strong> Posted On:</strong> Apr 15 2014</li>
+										</ul>
+										<div class="blog-content">
+											<p>Thông tin đang được cập nhật</p>
+										</div>
+										<a href="" class="btn btn-primary" data-toggle="modal" data-target="#blog-three">Thêm thông tin</a>
+									</div>
+									<div class="modal fade" id="blog-three" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-body">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<img src="images/blog/3.jpg" alt="" />
+													<h2>Thông tin đang được cập nhật</h2>
+													<p>Thông tin đang được cập nhật</p>
+												</div> 
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="single-blog">
+										<img src="images/blog/3.jpg" alt="" />
+										<h2>Thông tin đang được cập nhật</h2>
+										<ul class="post-meta">
+											<li><i class="fa fa-pencil-square-o"></i><strong> Posted By:</strong> DLH</li>
+											<li><i class="fa fa-clock-o"></i><strong> Posted On:</strong> Apr 15 2014</li>
+										</ul>
+										<div class="blog-content">
+											<p>Thông tin đang được cập nhật</p>
+										</div>
+										<a href="" class="btn btn-primary" data-toggle="modal" data-target="#blog-four">Thêm thông tin</a></div>
+										<div class="modal fade" id="blog-four" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-body">
+														<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+														<img src="images/blog/3.jpg" alt="" />
+														<h2>Thông tin đang được cập nhật</h2>
+														<p>Thông tin đang được cập nhật</p>
+													</div> 
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-blog">
+											<img src="images/blog/2.jpg" alt="" />
+											<h2>Thông tin đang được cập nhật</h2>
+											<ul class="post-meta">
+												<li><i class="fa fa-pencil-square-o"></i><strong> Posted By:</strong> DLH</li>
+												<li><i class="fa fa-clock-o"></i><strong> Posted On:</strong> Apr 15 2014</li>
+											</ul>
+											<div class="blog-content">
+												<p>Thông tin đang được cập nhật</p>
+											</div>
+											<a href="" class="btn btn-primary" data-toggle="modal" data-target="#blog-six">Thêm thông tin</a>
+										</div>
+										<div class="modal fade" id="blog-six" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-body">
+														<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+														<img src="images/blog/2.jpg" alt="" />
+														<h2>Thông tin đang được cập nhật</h2>
+														<p>Thông tin đang được cập nhật</p>
+													</div> 
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-4">
+										<div class="single-blog">
+											<img src="images/blog/1.jpg" alt="" />
+											<h2>Thông tin đang được cập nhật</h2>
+											<ul class="post-meta">
+												<li><i class="fa fa-pencil-square-o"></i><strong> Posted By:</strong> DLH</li>
+												<li><i class="fa fa-clock-o"></i><strong> Posted On:</strong> Apr 15 2014</li>
+											</ul>
+											<div class="blog-content">
+												<p>Thông tin đang được cập nhật.</p>
+											</div>
+											<a href="" class="btn btn-primary" data-toggle="modal" data-target="#blog-seven">Thêm thông tin</a>
+										</div>
+										<div class="modal fade" id="blog-seven" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-body">
+														<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+														<img src="images/blog/1.jpg" alt="" />
+														<h2>Thông tin đang được cập nhật</h2>
+														<p>Thông tin đang được cập nhật</p>
+													</div> 
+												</div>
+											</div>
+										</div>
+									</div> 
+								</div> 
+							</div> 
+						</section> <!--/#blog-->
+
+						<section id="contact">
+							<div class="container">
+								<div class="row text-center clearfix">
+									<div class="col-sm-8 col-sm-offset-2">
+										<div class="contact-heading">
+											<h2 class="title-one">Liên hệ với chúng tôi</h2>
+											<p>265 Lê Văn Lương, P. Tân Quy, Quận 7, Tp.HCM, Việt Nam</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container">
+								<div class="contact-details">
+									<div class="pattern"></div>
+									<div class="row text-center clearfix">
+										<div class="col-sm-6">
+											<div class="contact-address"><address><p><span>DLH</span>RealEstate</p><strong>265 Lê Văn Lương<br>P. Tân Quy<br> Quận 7, Tp.HCM, Việt Nam</strong><br><small>( Tầng xxx tòa nhà yyy )</small></address>
+												<div class="social-icons">
+													<a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a>
+													<a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-dribbble"></i></a>
+													<a href="#"><i class="fa fa-linkedin"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6"> 
+											<div id="contact-form-section">
+												<div class="status alert alert-success" style="display: none"></div>
+												<form id="contact-form" class="contact" name="contact-form" method="post" action="send-mail.php">
+													<div class="form-group">
+														<input type="text" name="name" class="form-control name-field" required="required" placeholder="Tên"></div>
+														<div class="form-group">
+															<input type="email" name="email" class="form-control mail-field" required="required" placeholder="Email">
+														</div> 
+														<div class="form-group">
+															<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Tin nhắn"></textarea>
+														</div> 
+														<div class="form-group">
+															<button type="submit" class="btn btn-primary">Gửi</button>
+														</div>
+													</form> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> 
+							</section> <!--/#contact--> 
+
+	<footer id="footer"> 
+		<div class="container"> 
+			<div class="text-center"> 
+				<p>Copyright &copy; 2017 - <a href="http://google.com/">DLH REAL ESTATE - MANAGEMENT.JSC</a> | All Rights Reserved</p> 
+			</div> 
+		</div> 
+	</footer> <!--/#footer--> 
+
+	<script type="text/javascript" src="js/jquery.js"></script> 
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script> 
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+	<script type="text/javascript" src="js/jquery.parallax.js"></script> 
+	<script type="text/javascript" src="js/main.js"></script> 
+</body>
+</html>
